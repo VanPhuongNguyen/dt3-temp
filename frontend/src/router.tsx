@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router';
 import LoadingSreen from 'components/LoadingScreen';
-import Auth from 'Hoc/Auth'
-import Layout from 'Hoc/Layout';
+import Auth from 'components/Auth'
+import Layout from 'components/Layout';
 
 const HomePage = lazy(() => import('pages/Home'));
 const RegisterLogin = lazy(() => import('pages/RegisterLogin'))
