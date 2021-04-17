@@ -29,7 +29,7 @@ module.exports = {
         'mobile': '500px'
       },
       height: {
-        'menu': '373px'
+        'menu': '437px'
       },
       borderWidth: {
         0.2: '0.2px',
