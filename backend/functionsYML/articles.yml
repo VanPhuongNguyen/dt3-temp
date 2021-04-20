@@ -1,0 +1,7 @@
+createArticle:
+  handler: src/handlers/articles/createArticle.handler
+  events:
+    - http:
+        method: POST
+        path: /article
+        cors: true

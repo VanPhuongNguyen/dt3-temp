@@ -211,7 +211,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618908518761-2021-04-20T08:48:38.761Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/createUser.handler",
         "Runtime": "nodejs12.x",
@@ -248,7 +248,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618908518761-2021-04-20T08:48:38.761Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/readUser.handler",
         "Runtime": "nodejs12.x",
@@ -285,7 +285,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618908518761-2021-04-20T08:48:38.761Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginUser.handler",
         "Runtime": "nodejs12.x",
@@ -322,7 +322,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618908518761-2021-04-20T08:48:38.761Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByGoogle.handler",
         "Runtime": "nodejs12.x",
@@ -359,7 +359,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618908518761-2021-04-20T08:48:38.761Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByFacebook.handler",
         "Runtime": "nodejs12.x",
@@ -396,7 +396,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618908518761-2021-04-20T08:48:38.761Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/categories/createCategory.handler",
         "Runtime": "nodejs12.x",
@@ -426,64 +426,64 @@
         "CreateCategoryLogGroup"
       ]
     },
-    "ReadUserLambdaVersionUlnyXhbPHpw3SODMnjvV1NpSCx55KIddWJLmM7lWnQ0": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "ReadUserLambdaFunction"
-        },
-        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
-      }
-    },
-    "LoginUserLambdaVersionOIXPMgPIy3a5Q0rIrK34L2uaRcghww1hnyRdV0YDE": {
+    "LoginUserLambdaVersionk6HAgJrUpl9qckOaJ1py0W1rnizFCtaQppfIE57Y": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginUserLambdaFunction"
         },
-        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
+        "CodeSha256": "WLxO8rLIVKwr1mfbu9tSHfQgel0FBPW32m2d6qv+t+U="
       }
     },
-    "LoginByGoogleLambdaVersionBsIqeFImC5sYmvCJmZ2IfzbH2gFb7n1qTi2I4PjI": {
+    "LoginByGoogleLambdaVersionxcoxShRvvDMnERHNL8BXaHccv9ydIlNtKyYnYqFkE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginByGoogleLambdaFunction"
         },
-        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
+        "CodeSha256": "WLxO8rLIVKwr1mfbu9tSHfQgel0FBPW32m2d6qv+t+U="
       }
     },
-    "LoginByFacebookLambdaVersionpnd7ss251txr4zXqqVSjncBaxr7LIsia3Y2ybEafqao": {
+    "ReadUserLambdaVersion4HdPi5j2PeZ9jMiirmQdeeyXgxFr1LUzwmjwEoQ": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "ReadUserLambdaFunction"
+        },
+        "CodeSha256": "WLxO8rLIVKwr1mfbu9tSHfQgel0FBPW32m2d6qv+t+U="
+      }
+    },
+    "LoginByFacebookLambdaVersionSgOCOoGAxkzUN5ybjJhOLrrZBQC1ik2ldnuIn3U30g": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginByFacebookLambdaFunction"
         },
-        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
+        "CodeSha256": "WLxO8rLIVKwr1mfbu9tSHfQgel0FBPW32m2d6qv+t+U="
       }
     },
-    "CreateCategoryLambdaVersionBHNC35lGHpDr0qLrB0AxZ3iZtsvWq0uOIbD70ntw": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "CreateCategoryLambdaFunction"
-        },
-        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
-      }
-    },
-    "CreateUserLambdaVersionQt7xDSRNgHnVRY4n5JvzySlSDjks0LNeL9rsNS77c": {
+    "CreateUserLambdaVersionxC41VJB5pTId8MNA1WwobqwC6RXXLA6smTblkqVkc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateUserLambdaFunction"
         },
-        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
+        "CodeSha256": "WLxO8rLIVKwr1mfbu9tSHfQgel0FBPW32m2d6qv+t+U="
+      }
+    },
+    "CreateCategoryLambdaVersionz53cGHNpx0LuspiGU6IF9dMQQWJGa73JI1pQMJQm1Qc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "CreateCategoryLambdaFunction"
+        },
+        "CodeSha256": "WLxO8rLIVKwr1mfbu9tSHfQgel0FBPW32m2d6qv+t+U="
       }
     },
     "ApiGatewayRestApi": {
@@ -1057,7 +1057,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1618906216815": {
+    "ApiGatewayDeployment1618908500869": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1308,40 +1308,40 @@
         "Ref": "ServerlessDeploymentBucket"
       }
     },
-    "ReadUserLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "ReadUserLambdaVersionUlnyXhbPHpw3SODMnjvV1NpSCx55KIddWJLmM7lWnQ0"
-      }
-    },
     "LoginUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginUserLambdaVersionOIXPMgPIy3a5Q0rIrK34L2uaRcghww1hnyRdV0YDE"
+        "Ref": "LoginUserLambdaVersionk6HAgJrUpl9qckOaJ1py0W1rnizFCtaQppfIE57Y"
       }
     },
     "LoginByGoogleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByGoogleLambdaVersionBsIqeFImC5sYmvCJmZ2IfzbH2gFb7n1qTi2I4PjI"
+        "Ref": "LoginByGoogleLambdaVersionxcoxShRvvDMnERHNL8BXaHccv9ydIlNtKyYnYqFkE"
+      }
+    },
+    "ReadUserLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "ReadUserLambdaVersion4HdPi5j2PeZ9jMiirmQdeeyXgxFr1LUzwmjwEoQ"
       }
     },
     "LoginByFacebookLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByFacebookLambdaVersionpnd7ss251txr4zXqqVSjncBaxr7LIsia3Y2ybEafqao"
-      }
-    },
-    "CreateCategoryLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "CreateCategoryLambdaVersionBHNC35lGHpDr0qLrB0AxZ3iZtsvWq0uOIbD70ntw"
+        "Ref": "LoginByFacebookLambdaVersionSgOCOoGAxkzUN5ybjJhOLrrZBQC1ik2ldnuIn3U30g"
       }
     },
     "CreateUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateUserLambdaVersionQt7xDSRNgHnVRY4n5JvzySlSDjks0LNeL9rsNS77c"
+        "Ref": "CreateUserLambdaVersionxC41VJB5pTId8MNA1WwobqwC6RXXLA6smTblkqVkc"
+      }
+    },
+    "CreateCategoryLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "CreateCategoryLambdaVersionz53cGHNpx0LuspiGU6IF9dMQQWJGa73JI1pQMJQm1Qc"
       }
     },
     "ServiceEndpoint": {
