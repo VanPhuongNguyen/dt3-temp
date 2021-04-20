@@ -4,6 +4,7 @@ export interface Article {
   title: string;
   content: string;
   avatar: string;
+  view: number;
   postBy: mongoose.Types.ObjectId;
   comment: Array<mongoose.Types.ObjectId>;
 }
