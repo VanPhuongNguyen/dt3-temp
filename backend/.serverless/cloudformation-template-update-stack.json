@@ -101,6 +101,12 @@
         "LogGroupName": "/aws/lambda/dt3-backend-dev-loginByFacebook"
       }
     },
+    "CreateCategoryLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-createCategory"
+      }
+    },
     "IamRoleLambdaExecution": {
       "Type": "AWS::IAM::Role",
       "Properties": {
@@ -205,7 +211,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/createUser.handler",
         "Runtime": "nodejs12.x",
@@ -242,7 +248,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/readUser.handler",
         "Runtime": "nodejs12.x",
@@ -279,7 +285,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginUser.handler",
         "Runtime": "nodejs12.x",
@@ -316,7 +322,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByGoogle.handler",
         "Runtime": "nodejs12.x",
@@ -353,7 +359,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByFacebook.handler",
         "Runtime": "nodejs12.x",
@@ -383,54 +389,101 @@
         "LoginByFacebookLogGroup"
       ]
     },
-    "ReadUserLambdaVersionwgpih5hVxjJ5nqpKHDdiyxHR9H3cCLdP7pKqGfaHimU": {
+    "CreateCategoryLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1618906245285-2021-04-20T08:10:45.285Z/dt3-backend.zip"
+        },
+        "Handler": "src/handlers/categories/createCategory.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-createCategory",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "CreateCategoryLogGroup"
+      ]
+    },
+    "ReadUserLambdaVersionUlnyXhbPHpw3SODMnjvV1NpSCx55KIddWJLmM7lWnQ0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadUserLambdaFunction"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
+        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
       }
     },
-    "LoginUserLambdaVersionNC5QqBM7aBNuTavHcY3lbVwhrD4qpwM4uFeWXM4nBPo": {
+    "LoginUserLambdaVersionOIXPMgPIy3a5Q0rIrK34L2uaRcghww1hnyRdV0YDE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginUserLambdaFunction"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
+        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
       }
     },
-    "LoginByGoogleLambdaVersionJ6VCuVecW9WeaNfacFYTeIJpvxQldgNEflrfcWgtk": {
+    "LoginByGoogleLambdaVersionBsIqeFImC5sYmvCJmZ2IfzbH2gFb7n1qTi2I4PjI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginByGoogleLambdaFunction"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
+        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
       }
     },
-    "LoginByFacebookLambdaVersiontKzMQsvHimrJNTEHLV4kR1beRuBWXqpAtClwLlfGQ": {
+    "LoginByFacebookLambdaVersionpnd7ss251txr4zXqqVSjncBaxr7LIsia3Y2ybEafqao": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginByFacebookLambdaFunction"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
+        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
       }
     },
-    "CreateUserLambdaVersion5FaGBpom0CGrUukbQNwjK2cvk8oSQzKVPa3gHEAfx4": {
+    "CreateCategoryLambdaVersionBHNC35lGHpDr0qLrB0AxZ3iZtsvWq0uOIbD70ntw": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "CreateCategoryLambdaFunction"
+        },
+        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
+      }
+    },
+    "CreateUserLambdaVersionQt7xDSRNgHnVRY4n5JvzySlSDjks0LNeL9rsNS77c": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateUserLambdaFunction"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
+        "CodeSha256": "5uzJFZm7QjIkVKHA/dnJXlSE/WYuyq9aTqgT9I5Q0Fo="
       }
     },
     "ApiGatewayRestApi": {
@@ -501,6 +554,21 @@
           ]
         },
         "PathPart": "loginByFacebook",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceCategory": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "category",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -680,6 +748,51 @@
         },
         "ResourceId": {
           "Ref": "ApiGatewayResourceLoginbyfacebook"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodCategoryOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceCategory"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -901,7 +1014,50 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1618393158059": {
+    "ApiGatewayMethodCategoryPost": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceCategory"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "CreateCategoryLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayDeployment1618906216815": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -914,11 +1070,13 @@
         "ApiGatewayMethodLoginOptions",
         "ApiGatewayMethodLoginbygoogleOptions",
         "ApiGatewayMethodLoginbyfacebookOptions",
+        "ApiGatewayMethodCategoryOptions",
         "ApiGatewayMethodUserPost",
         "ApiGatewayMethodUserGet",
         "ApiGatewayMethodLoginPost",
         "ApiGatewayMethodLoginbygooglePost",
-        "ApiGatewayMethodLoginbyfacebookPost"
+        "ApiGatewayMethodLoginbyfacebookPost",
+        "ApiGatewayMethodCategoryPost"
       ]
     },
     "CreateUserLambdaPermissionApiGateway": {
@@ -1105,6 +1263,43 @@
           ]
         }
       }
+    },
+    "CreateCategoryLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "CreateCategoryLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
     }
   },
   "Outputs": {
@@ -1116,31 +1311,37 @@
     "ReadUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadUserLambdaVersionwgpih5hVxjJ5nqpKHDdiyxHR9H3cCLdP7pKqGfaHimU"
+        "Ref": "ReadUserLambdaVersionUlnyXhbPHpw3SODMnjvV1NpSCx55KIddWJLmM7lWnQ0"
       }
     },
     "LoginUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginUserLambdaVersionNC5QqBM7aBNuTavHcY3lbVwhrD4qpwM4uFeWXM4nBPo"
+        "Ref": "LoginUserLambdaVersionOIXPMgPIy3a5Q0rIrK34L2uaRcghww1hnyRdV0YDE"
       }
     },
     "LoginByGoogleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByGoogleLambdaVersionJ6VCuVecW9WeaNfacFYTeIJpvxQldgNEflrfcWgtk"
+        "Ref": "LoginByGoogleLambdaVersionBsIqeFImC5sYmvCJmZ2IfzbH2gFb7n1qTi2I4PjI"
       }
     },
     "LoginByFacebookLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByFacebookLambdaVersiontKzMQsvHimrJNTEHLV4kR1beRuBWXqpAtClwLlfGQ"
+        "Ref": "LoginByFacebookLambdaVersionpnd7ss251txr4zXqqVSjncBaxr7LIsia3Y2ybEafqao"
+      }
+    },
+    "CreateCategoryLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "CreateCategoryLambdaVersionBHNC35lGHpDr0qLrB0AxZ3iZtsvWq0uOIbD70ntw"
       }
     },
     "CreateUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateUserLambdaVersion5FaGBpom0CGrUukbQNwjK2cvk8oSQzKVPa3gHEAfx4"
+        "Ref": "CreateUserLambdaVersionQt7xDSRNgHnVRY4n5JvzySlSDjks0LNeL9rsNS77c"
       }
     },
     "ServiceEndpoint": {

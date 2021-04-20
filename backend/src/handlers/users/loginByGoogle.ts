@@ -53,7 +53,9 @@ const loginByGoogle: APIGatewayProxyHandler = async (event) => {
       body: JSON.stringify({ user, token }),
     };
   } catch (error) {
-    throw new createError.InternalServerError(JSON.stringify(error));
+    throw new createError.InternalServerError(
+      JSON.stringify({ message: error.message }),
+    );
   }
 };
 

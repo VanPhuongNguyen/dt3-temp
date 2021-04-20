@@ -1,0 +1,7 @@
+createCategory:
+  handler: src/handlers/categories/createCategory.handler
+  events:
+    - http:
+        method: POST
+        path: /category
+        cors: true

@@ -12,6 +12,7 @@ export interface User {
   genders?: 'Male' | 'Female';
   type: 'GoogleAuth' | 'FacebookAuth' | 'TraditionalAuth';
   birthday?: string;
+  role: Number;
   favoriteCategories?: Array<string>;
   saveNews?: Array<string>;
   token: Array<string>;
@@ -58,7 +59,7 @@ const UserSchema = new Schema(
     avatar: {
       type: String,
     },
-    roles: {
+    role: {
       type: Number,
       enum: [0, 1, 2],
       default: 0,

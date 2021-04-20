@@ -48,3 +48,4 @@ provider:
 
 functions:
   - ${file(functionsYML/users.yml)}
+  - ${file(functionsYML/categories.yml)}
