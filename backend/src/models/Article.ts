@@ -25,6 +25,10 @@ const ArticleSchema = new Schema(
       type: String,
       required: true,
     },
+    view: {
+      type: Number,
+      default: 0,
+    },
     postBy: {
       type: mongoose.Types.ObjectId,
       required: true,

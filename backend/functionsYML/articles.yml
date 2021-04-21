@@ -5,3 +5,11 @@ createArticle:
         method: POST
         path: /article
         cors: true
+
+listArticles:
+  handler: src/handlers/articles/listArticles.handler
+  events:
+    - http:
+        method: GET
+        path: /articles
+        cors: true
