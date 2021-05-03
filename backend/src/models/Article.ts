@@ -1,27 +1,50 @@
 import mongoose, { Document, model, Schema, Model } from 'mongoose';
 
 export interface Article {
+  articleId: string;
   title: string;
+  description: string;
   content: string;
-  avatar: string;
+  source: string;
+  category: mongoose.Types.ObjectId;
+  urlToImage: string;
   view: number;
-  postBy: mongoose.Types.ObjectId;
+  author: string;
+  url: string;
+  publishedAt: string;
   comment: Array<mongoose.Types.ObjectId>;
 }
 
 const ArticleSchema = new Schema(
   {
+    articleId: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+    },
     title: {
       type: String,
       required: true,
       trim: true,
-      unique: true,
+    },
+    description: {
+      type: String,
+    },
+    source: {
+      type: String,
+      required: true,
     },
     content: {
       type: String,
       required: true,
     },
-    avatar: {
+    category: {
+      type: mongoose.Types.ObjectId,
+      required: true,
+      href: 'Category',
+    },
+    urlToImage: {
       type: String,
       required: true,
     },
@@ -29,10 +52,16 @@ const ArticleSchema = new Schema(
       type: Number,
       default: 0,
     },
-    postBy: {
-      type: mongoose.Types.ObjectId,
+    author: {
+      type: String,
+    },
+    url: {
+      type: String,
       required: true,
-      href: 'User',
+    },
+    publishedAt: {
+      type: String,
+      required: true,
     },
     comments: [{ type: mongoose.Types.ObjectId, href: 'Comment' }],
   },

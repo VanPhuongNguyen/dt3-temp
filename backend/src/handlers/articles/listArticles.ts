@@ -1,7 +1,7 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import 'source-map-support/register';
 import createError from 'http-errors';
-import { adminMiddleware } from '@src/middlewares/middy';
+import { commonMiddleware } from '@src/middlewares/middy';
 import Article from '@src/models/Article';
 import { Error } from 'mongoose';
 
@@ -23,8 +23,7 @@ const listArticles: APIGatewayProxyHandler = async (event) => {
     const articles = await Article.find()
       .skip(skip)
       .limit(limit)
-      .sort([[sortBy, order]])
-      .exec();
+      .sort([[sortBy, order]]);
 
     if (!articles) {
       throw new Error('No article found.');
@@ -41,4 +40,4 @@ const listArticles: APIGatewayProxyHandler = async (event) => {
   }
 };
 
-export const handler = adminMiddleware(listArticles);
+export const handler = commonMiddleware(listArticles);
