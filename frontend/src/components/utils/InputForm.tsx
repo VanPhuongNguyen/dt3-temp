@@ -1,13 +1,14 @@
 import React from 'react'
 
-const Input = ({ formik, id, type }: any) => {
+const Input = ({ formik, id, type, Icon, className }: any) => {
     return (
-        <div className="overflow-hidden flex flex-col h-16">
+        <div className={`${className} overflow-hidden flex flex-col h-16`}>
+            {Icon?<Icon className="absolute left-8 top-6" />:null}
             <input
                 type={type}
                 id={id}
                 placeholder={id.replace(/^\w/, (c:any) => c.toUpperCase())}
-                className="h-10 px-3 rounded-md focus:outline-none"
+                className={`h-10 pr-3 ${Icon?'pl-8':'pl-3'} rounded-full focus:outline-none`}
                 { ...formik.getFieldProps(id) }
             />
             <div className="text-red-600">

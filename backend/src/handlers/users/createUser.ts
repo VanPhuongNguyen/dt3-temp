@@ -20,7 +20,9 @@ const createUser: APIGatewayProxyHandler = async (event) => {
       body: JSON.stringify({ user: doc, token }),
     };
   } catch (error) {
-    throw new createError.InternalServerError(JSON.stringify(error));
+    throw new createError.InternalServerError(
+      JSON.stringify({ message: error.message }),
+    );
   }
 };
 

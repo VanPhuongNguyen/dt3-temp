@@ -57,6 +57,7 @@
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^6.0.8",
     "formik": "^2.2.6",
+    "gifsicle": "^5.2.0",
     "html-webpack-plugin": "^4.5.0",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",

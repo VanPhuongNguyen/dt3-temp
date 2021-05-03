@@ -1,0 +1,24 @@
+addArticle:
+  handler: src/handlers/articles/addArticle.handler
+  events:
+    - schedule: rate(2 hours)
+    - http:
+        method: POST
+        path: /article
+        cors: true
+
+listArticles:
+  handler: src/handlers/articles/listArticles.handler
+  events:
+    - http:
+        method: GET
+        path: /articles
+        cors: true
+
+readArticle:
+  handler: src/handlers/articles/readArticle.handler
+  events:
+    - http:
+        method: GET
+        path: /article/{id}
+        cors: true

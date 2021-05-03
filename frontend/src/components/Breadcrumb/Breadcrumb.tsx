@@ -8,7 +8,6 @@ const Breadcrumbs = () => {
     const location = useLocation()
 
     const pathnames = location.pathname.split('/').filter(x=>x)
-    console.log(pathnames)
 
     return (
         pathnames.length > 0 ? 

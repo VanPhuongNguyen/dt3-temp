@@ -34,6 +34,7 @@ provider:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
     MONGO_URL: ${file(config/env.yml):MONGO_URL}
     JWT_SECRET: ${file(config/env.yml):JWT_SECRET}
+    NEWS_API_KEY: ${file(config/env.yml):NEWS_API_KEY}
   tracing:
     lambda: true
     apiGateway: true
@@ -48,3 +49,6 @@ provider:
 
 functions:
   - ${file(functionsYML/users.yml)}
+  - ${file(functionsYML/categories.yml)}
+  - ${file(functionsYML/articles.yml)}
+  - ${file(functionsYML/comments.yml)}

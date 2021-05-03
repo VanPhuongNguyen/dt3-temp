@@ -3,7 +3,7 @@ import { useFormik } from 'formik'
 import { useDispatch } from 'react-redux'
 import * as Yup from 'yup'
 import { loginUser } from 'redux/actions/users';
-import Input from 'components/utils/Input'
+import Input from 'components/utils/InputForm'
 
 const LoginForm = (props:any) => {
     const dispatch = useDispatch()

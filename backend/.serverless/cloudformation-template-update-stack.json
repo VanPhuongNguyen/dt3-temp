@@ -101,6 +101,42 @@
         "LogGroupName": "/aws/lambda/dt3-backend-dev-loginByFacebook"
       }
     },
+    "CreateCategoryLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-createCategory"
+      }
+    },
+    "ListCategoriesLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-listCategories"
+      }
+    },
+    "AddArticleLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-addArticle"
+      }
+    },
+    "ListArticlesLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-listArticles"
+      }
+    },
+    "ReadArticleLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-readArticle"
+      }
+    },
+    "PostCommentLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/dt3-backend-dev-postComment"
+      }
+    },
     "IamRoleLambdaExecution": {
       "Type": "AWS::IAM::Role",
       "Properties": {
@@ -205,7 +241,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/createUser.handler",
         "Runtime": "nodejs12.x",
@@ -221,7 +257,8 @@
             "NODE_ENV": "dev",
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
-            "JWT_SECRET": "dt3-secret"
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
           }
         },
         "Role": {
@@ -242,7 +279,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/readUser.handler",
         "Runtime": "nodejs12.x",
@@ -258,7 +295,8 @@
             "NODE_ENV": "dev",
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
-            "JWT_SECRET": "dt3-secret"
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
           }
         },
         "Role": {
@@ -279,7 +317,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginUser.handler",
         "Runtime": "nodejs12.x",
@@ -295,7 +333,8 @@
             "NODE_ENV": "dev",
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
-            "JWT_SECRET": "dt3-secret"
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
           }
         },
         "Role": {
@@ -316,7 +355,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByGoogle.handler",
         "Runtime": "nodejs12.x",
@@ -332,7 +371,8 @@
             "NODE_ENV": "dev",
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
-            "JWT_SECRET": "dt3-secret"
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
           }
         },
         "Role": {
@@ -353,7 +393,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1618393196807-2021-04-14T09:39:56.807Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByFacebook.handler",
         "Runtime": "nodejs12.x",
@@ -369,7 +409,8 @@
             "NODE_ENV": "dev",
             "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
             "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
-            "JWT_SECRET": "dt3-secret"
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
           }
         },
         "Role": {
@@ -383,54 +424,379 @@
         "LoginByFacebookLogGroup"
       ]
     },
-    "ReadUserLambdaVersionwgpih5hVxjJ5nqpKHDdiyxHR9H3cCLdP7pKqGfaHimU": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
+    "CreateCategoryLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
       "Properties": {
-        "FunctionName": {
-          "Ref": "ReadUserLambdaFunction"
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
-      }
+        "Handler": "src/handlers/categories/createCategory.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-createCategory",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "CreateCategoryLogGroup"
+      ]
     },
-    "LoginUserLambdaVersionNC5QqBM7aBNuTavHcY3lbVwhrD4qpwM4uFeWXM4nBPo": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
+    "ListCategoriesLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
       "Properties": {
-        "FunctionName": {
-          "Ref": "LoginUserLambdaFunction"
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
-      }
+        "Handler": "src/handlers/categories/listCategories.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-listCategories",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "ListCategoriesLogGroup"
+      ]
     },
-    "LoginByGoogleLambdaVersionJ6VCuVecW9WeaNfacFYTeIJpvxQldgNEflrfcWgtk": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
+    "AddArticleLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
       "Properties": {
-        "FunctionName": {
-          "Ref": "LoginByGoogleLambdaFunction"
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
-      }
+        "Handler": "src/handlers/articles/addArticle.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-addArticle",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "AddArticleLogGroup"
+      ]
     },
-    "LoginByFacebookLambdaVersiontKzMQsvHimrJNTEHLV4kR1beRuBWXqpAtClwLlfGQ": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
+    "ListArticlesLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
       "Properties": {
-        "FunctionName": {
-          "Ref": "LoginByFacebookLambdaFunction"
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
-      }
+        "Handler": "src/handlers/articles/listArticles.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-listArticles",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "ListArticlesLogGroup"
+      ]
     },
-    "CreateUserLambdaVersion5FaGBpom0CGrUukbQNwjK2cvk8oSQzKVPa3gHEAfx4": {
+    "ReadArticleLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+        },
+        "Handler": "src/handlers/articles/readArticle.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-readArticle",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "ReadArticleLogGroup"
+      ]
+    },
+    "PostCommentLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+        },
+        "Handler": "src/handlers/comments/postComment.handler",
+        "Runtime": "nodejs12.x",
+        "FunctionName": "dt3-backend-dev-postComment",
+        "MemorySize": 1024,
+        "Timeout": 6,
+        "TracingConfig": {
+          "Mode": "Active"
+        },
+        "Environment": {
+          "Variables": {
+            "DEBUG": "*",
+            "NODE_ENV": "dev",
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+            "MONGO_URL": "mongodb+srv://admin:phuong9823@cluster0.nkddp.mongodb.net/dt3-dev?retryWrites=true&w=majority",
+            "JWT_SECRET": "dt3-secret",
+            "NEWS_API_KEY": "1e5cd5415f28421291789ebde322e96b"
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "PostCommentLogGroup"
+      ]
+    },
+    "CreateUserLambdaVersionPTeadie4xqD3qG6t1JZNfVbDms151gXiYlWa7OUk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateUserLambdaFunction"
         },
-        "CodeSha256": "IMakeX6cNpxHTQ6M1aNVbdH7vU4QiVoq+UvPbIFl8+Y="
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "LoginUserLambdaVersionyRv2Xxbnejr4MlVFDfgqdB2UN4f1Hj1CFg5fiXYgk": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "LoginUserLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "LoginByGoogleLambdaVersions9DljD3yeH9nwhk4HjKosIDOspUozfrqxKxdW2T94k4": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "LoginByGoogleLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "LoginByFacebookLambdaVersionExEq8E3O7syPCpyieqkauUWgxhRUJVumlMssGo": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "LoginByFacebookLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "ReadUserLambdaVersionHAvWR9wAsXGGTRyOjxeHg2gA7tIoa72jDh8QO8mYDQ": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "ReadUserLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "CreateCategoryLambdaVersionB1kuCZUKcVGUYpY0hSV8K4QvQbU888Vmf9pv5Ij9cTU": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "CreateCategoryLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "ListCategoriesLambdaVersionyYssksvokvVkPxz4iIZPT3SYbrjMolMPpbd4T21e7g": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "ListCategoriesLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "AddArticleLambdaVersionhUUFb0Nh7LwVSfr5bhq1dOKYynrrt4ZderZhgBLpI": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "AddArticleLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "ListArticlesLambdaVersionXHa3gqqxRm8VYQy2RnBpQuTtNVMYBP4om3VF5usZc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "ListArticlesLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "ReadArticleLambdaVersionkLjs7WUD9conLklctJkPSDYGuLyiMNRoeAFHVi6ANLw": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "ReadArticleLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "PostCommentLambdaVersionjX8GX15MRtR1aZKFe5o81R0H2Kl6k2mVhUeO60q7KSw": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "PostCommentLambdaFunction"
+        },
+        "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+      }
+    },
+    "AddArticleEventsRuleSchedule1": {
+      "Type": "AWS::Events::Rule",
+      "Properties": {
+        "ScheduleExpression": "rate(2 hours)",
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Arn": {
+              "Fn::GetAtt": [
+                "AddArticleLambdaFunction",
+                "Arn"
+              ]
+            },
+            "Id": "addArticleSchedule"
+          }
+        ]
+      }
+    },
+    "AddArticleLambdaPermissionEventsRuleSchedule1": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "AddArticleLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "events.amazonaws.com",
+        "SourceArn": {
+          "Fn::GetAtt": [
+            "AddArticleEventsRuleSchedule1",
+            "Arn"
+          ]
+        }
       }
     },
     "ApiGatewayRestApi": {
@@ -501,6 +867,93 @@
           ]
         },
         "PathPart": "loginByFacebook",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceCategory": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "category",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceCategories": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "categories",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceArticle": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "article",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceArticleIdVar": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Ref": "ApiGatewayResourceArticle"
+        },
+        "PathPart": "{id}",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceArticles": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "articles",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceComment": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "comment",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -680,6 +1133,276 @@
         },
         "ResourceId": {
           "Ref": "ApiGatewayResourceLoginbyfacebook"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodCategoryOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceCategory"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodCategoriesOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceCategories"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodArticleOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceArticle"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodArticlesOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceArticles"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodArticleIdVarOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,GET'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceArticleIdVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodCommentOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": "#set($origin = $input.params(\"Origin\"))\n#if($origin == \"\") #set($origin = $input.params(\"origin\")) #end\n#if($origin.matches(\".+\")) #set($context.responseOverride.header.Access-Control-Allow-Origin = $origin) #end"
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceComment"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -901,7 +1624,265 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1618393158059": {
+    "ApiGatewayMethodCategoryPost": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceCategory"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "CreateCategoryLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodCategoriesGet": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceCategories"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "ListCategoriesLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodArticlePost": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceArticle"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "AddArticleLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodArticlesGet": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceArticles"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "ListArticlesLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodArticleIdVarGet": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceArticleIdVar"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "ReadArticleLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayMethodCommentPost": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceComment"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "PostCommentLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      }
+    },
+    "ApiGatewayDeployment1620035558324": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -914,11 +1895,23 @@
         "ApiGatewayMethodLoginOptions",
         "ApiGatewayMethodLoginbygoogleOptions",
         "ApiGatewayMethodLoginbyfacebookOptions",
+        "ApiGatewayMethodCategoryOptions",
+        "ApiGatewayMethodCategoriesOptions",
+        "ApiGatewayMethodArticleOptions",
+        "ApiGatewayMethodArticlesOptions",
+        "ApiGatewayMethodArticleIdVarOptions",
+        "ApiGatewayMethodCommentOptions",
         "ApiGatewayMethodUserPost",
         "ApiGatewayMethodUserGet",
         "ApiGatewayMethodLoginPost",
         "ApiGatewayMethodLoginbygooglePost",
-        "ApiGatewayMethodLoginbyfacebookPost"
+        "ApiGatewayMethodLoginbyfacebookPost",
+        "ApiGatewayMethodCategoryPost",
+        "ApiGatewayMethodCategoriesGet",
+        "ApiGatewayMethodArticlePost",
+        "ApiGatewayMethodArticlesGet",
+        "ApiGatewayMethodArticleIdVarGet",
+        "ApiGatewayMethodCommentPost"
       ]
     },
     "CreateUserLambdaPermissionApiGateway": {
@@ -1105,6 +2098,228 @@
           ]
         }
       }
+    },
+    "CreateCategoryLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "CreateCategoryLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "ListCategoriesLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ListCategoriesLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "AddArticleLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "AddArticleLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "ListArticlesLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ListArticlesLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "ReadArticleLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ReadArticleLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
+    },
+    "PostCommentLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "PostCommentLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
     }
   },
   "Outputs": {
@@ -1113,34 +2328,70 @@
         "Ref": "ServerlessDeploymentBucket"
       }
     },
-    "ReadUserLambdaFunctionQualifiedArn": {
+    "CreateUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadUserLambdaVersionwgpih5hVxjJ5nqpKHDdiyxHR9H3cCLdP7pKqGfaHimU"
+        "Ref": "CreateUserLambdaVersionPTeadie4xqD3qG6t1JZNfVbDms151gXiYlWa7OUk"
       }
     },
     "LoginUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginUserLambdaVersionNC5QqBM7aBNuTavHcY3lbVwhrD4qpwM4uFeWXM4nBPo"
+        "Ref": "LoginUserLambdaVersionyRv2Xxbnejr4MlVFDfgqdB2UN4f1Hj1CFg5fiXYgk"
       }
     },
     "LoginByGoogleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByGoogleLambdaVersionJ6VCuVecW9WeaNfacFYTeIJpvxQldgNEflrfcWgtk"
+        "Ref": "LoginByGoogleLambdaVersions9DljD3yeH9nwhk4HjKosIDOspUozfrqxKxdW2T94k4"
       }
     },
     "LoginByFacebookLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByFacebookLambdaVersiontKzMQsvHimrJNTEHLV4kR1beRuBWXqpAtClwLlfGQ"
+        "Ref": "LoginByFacebookLambdaVersionExEq8E3O7syPCpyieqkauUWgxhRUJVumlMssGo"
       }
     },
-    "CreateUserLambdaFunctionQualifiedArn": {
+    "ReadUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateUserLambdaVersion5FaGBpom0CGrUukbQNwjK2cvk8oSQzKVPa3gHEAfx4"
+        "Ref": "ReadUserLambdaVersionHAvWR9wAsXGGTRyOjxeHg2gA7tIoa72jDh8QO8mYDQ"
+      }
+    },
+    "CreateCategoryLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "CreateCategoryLambdaVersionB1kuCZUKcVGUYpY0hSV8K4QvQbU888Vmf9pv5Ij9cTU"
+      }
+    },
+    "ListCategoriesLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "ListCategoriesLambdaVersionyYssksvokvVkPxz4iIZPT3SYbrjMolMPpbd4T21e7g"
+      }
+    },
+    "AddArticleLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "AddArticleLambdaVersionhUUFb0Nh7LwVSfr5bhq1dOKYynrrt4ZderZhgBLpI"
+      }
+    },
+    "ListArticlesLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "ListArticlesLambdaVersionXHa3gqqxRm8VYQy2RnBpQuTtNVMYBP4om3VF5usZc"
+      }
+    },
+    "ReadArticleLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "ReadArticleLambdaVersionkLjs7WUD9conLklctJkPSDYGuLyiMNRoeAFHVi6ANLw"
+      }
+    },
+    "PostCommentLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "PostCommentLambdaVersionjX8GX15MRtR1aZKFe5o81R0H2Kl6k2mVhUeO60q7KSw"
       }
     },
     "ServiceEndpoint": {
