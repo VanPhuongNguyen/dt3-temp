@@ -2,9 +2,8 @@ import mongoose, { Document, model, Schema, Model } from 'mongoose';
 
 export interface Comment {
   content: string;
-  commentFor: mongoose.Types.ObjectId;
   postBy: mongoose.Types.ObjectId;
-  comment: Array<mongoose.Types.ObjectId>;
+  comments: Array<mongoose.Types.ObjectId>;
 }
 
 const CommentSchema = new Schema(
@@ -18,7 +17,7 @@ const CommentSchema = new Schema(
       required: true,
       href: 'User',
     },
-    comment: [{ type: mongoose.Types.ObjectId, href: 'Comment' }],
+    comments: [{ type: mongoose.Types.ObjectId, href: 'Comment' }],
   },
   {
     timestamps: true,

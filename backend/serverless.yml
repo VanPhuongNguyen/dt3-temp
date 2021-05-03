@@ -51,3 +51,4 @@ functions:
   - ${file(functionsYML/users.yml)}
   - ${file(functionsYML/categories.yml)}
   - ${file(functionsYML/articles.yml)}
+  - ${file(functionsYML/comments.yml)}

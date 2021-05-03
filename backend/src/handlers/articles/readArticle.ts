@@ -3,13 +3,40 @@ import 'source-map-support/register';
 import createError from 'http-errors';
 import { commonMiddleware } from '@src/middlewares/middy';
 import Article from '@src/models/Article';
+import Comment from '@src/models/Comment';
+import User from '@src/models/User';
 import { Error } from 'mongoose';
 
 const readArticle: APIGatewayProxyHandler = async (event) => {
   const id = event.pathParameters.id;
 
   try {
-    const article = await Article.findById(id);
+    const article = await Article.findByIdAndUpdate(
+      id,
+      {
+        $inc: { view: 1 },
+      },
+      { new: true },
+    ).populate({
+      path: 'comments',
+      model: Comment,
+      populate: [
+        {
+          path: 'postBy',
+          model: User,
+          select: 'firstName lastName avatar',
+        },
+        {
+          path: 'comments',
+          model: Comment,
+          populate: {
+            path: 'postBy',
+            model: User,
+            select: 'firstName lastName avatar',
+          },
+        },
+      ],
+    });
 
     if (!article) {
       throw new Error('No article found.');

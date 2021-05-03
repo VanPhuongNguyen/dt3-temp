@@ -6,6 +6,9 @@ import Article from '@src/models/Article';
 import { Error } from 'mongoose';
 
 const listArticles: APIGatewayProxyHandler = async (event) => {
+  const categoryId = event.queryStringParameters.category
+    ? event.queryStringParameters.categoryId
+    : null;
   const skip = event.queryStringParameters.skip
     ? parseInt(event.queryStringParameters.skip)
     : 0;
@@ -20,7 +23,9 @@ const listArticles: APIGatewayProxyHandler = async (event) => {
     : 'desc';
 
   try {
-    const articles = await Article.find()
+    const articles = await Article.find({
+      category: categoryId ? categoryId : true,
+    })
       .skip(skip)
       .limit(limit)
       .sort([[sortBy, order]]);
