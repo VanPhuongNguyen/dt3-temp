@@ -3,11 +3,12 @@ import 'source-map-support/register';
 import createError from 'http-errors';
 import { commonMiddleware } from '@src/middlewares/middy';
 import Article from '@src/models/Article';
+import Category from '@src/models/Category';
 import { Error } from 'mongoose';
 
 const listArticles: APIGatewayProxyHandler = async (event) => {
   const categoryId = event.queryStringParameters.category
-    ? event.queryStringParameters.categoryId
+    ? event.queryStringParameters.category
     : null;
   const skip = event.queryStringParameters.skip
     ? parseInt(event.queryStringParameters.skip)
@@ -21,14 +22,17 @@ const listArticles: APIGatewayProxyHandler = async (event) => {
   const order = event.queryStringParameters.order
     ? event.queryStringParameters.order
     : 'desc';
-
   try {
     const articles = await Article.find({
-      category: categoryId ? categoryId : true,
+      category: categoryId ? categoryId : { $exists: true },
     })
       .skip(skip)
       .limit(limit)
-      .sort([[sortBy, order]]);
+      .sort([[sortBy, order]])
+      .populate({
+        path: 'category',
+        model: Category,
+      });
 
     if (!articles) {
       throw new Error('No article found.');

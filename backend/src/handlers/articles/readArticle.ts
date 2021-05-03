@@ -4,6 +4,7 @@ import createError from 'http-errors';
 import { commonMiddleware } from '@src/middlewares/middy';
 import Article from '@src/models/Article';
 import Comment from '@src/models/Comment';
+import Category from '@src/models/Category';
 import User from '@src/models/User';
 import { Error } from 'mongoose';
 
@@ -17,26 +18,31 @@ const readArticle: APIGatewayProxyHandler = async (event) => {
         $inc: { view: 1 },
       },
       { new: true },
-    ).populate({
-      path: 'comments',
-      model: Comment,
-      populate: [
-        {
-          path: 'postBy',
-          model: User,
-          select: 'firstName lastName avatar',
-        },
-        {
-          path: 'comments',
-          model: Comment,
-          populate: {
+    )
+      .populate({
+        path: 'comments',
+        model: Comment,
+        populate: [
+          {
             path: 'postBy',
             model: User,
             select: 'firstName lastName avatar',
           },
-        },
-      ],
-    });
+          {
+            path: 'comments',
+            model: Comment,
+            populate: {
+              path: 'postBy',
+              model: User,
+              select: 'firstName lastName avatar',
+            },
+          },
+        ],
+      })
+      .populate({
+        path: 'category',
+        model: Category,
+      });
 
     if (!article) {
       throw new Error('No article found.');
