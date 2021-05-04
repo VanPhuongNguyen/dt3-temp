@@ -18,7 +18,7 @@ const listArticles: APIGatewayProxyHandler = async (event) => {
       key !== 'text' &&
       key !== 'author'
     ) {
-      findArgs[key] = event.queryStringParameters[key].split('-').join(' ');
+      findArgs[key] = event.queryStringParameters[key];
     } else if (key === 'text') {
       findArgs['$or'] = [
         {

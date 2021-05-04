@@ -22,3 +22,11 @@ readArticle:
         method: GET
         path: /article/{id}
         cors: true
+
+getTotal:
+  handler: src/handlers/articles/getTotal.handler
+  events:
+    - http:
+        method: GET
+        path: /totalArticles
+        cors: true
