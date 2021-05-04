@@ -72,7 +72,7 @@ const listArticles: APIGatewayProxyHandler = async (event) => {
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ articles }),
+      body: JSON.stringify({ success: true, size: articles.length, articles }),
     };
   } catch (error) {
     throw new createError.InternalServerError(
