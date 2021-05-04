@@ -27,7 +27,7 @@ loginByGoogle:
   events:
     - http:
         method: POST
-        path: /loginByGoogle
+        path: /login-by-google
         cors: true
 
 loginByFacebook:
@@ -35,5 +35,5 @@ loginByFacebook:
   events:
     - http:
         method: POST
-        path: /loginByFacebook
+        path: /login-by-facebook
         cors: true

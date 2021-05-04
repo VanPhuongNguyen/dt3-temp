@@ -247,7 +247,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/createUser.handler",
         "Runtime": "nodejs12.x",
@@ -285,7 +285,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/readUser.handler",
         "Runtime": "nodejs12.x",
@@ -323,7 +323,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginUser.handler",
         "Runtime": "nodejs12.x",
@@ -361,7 +361,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByGoogle.handler",
         "Runtime": "nodejs12.x",
@@ -399,7 +399,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/users/loginByFacebook.handler",
         "Runtime": "nodejs12.x",
@@ -437,7 +437,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/categories/createCategory.handler",
         "Runtime": "nodejs12.x",
@@ -475,7 +475,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/categories/listCategories.handler",
         "Runtime": "nodejs12.x",
@@ -513,7 +513,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/articles/addArticle.handler",
         "Runtime": "nodejs12.x",
@@ -551,7 +551,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/articles/listArticles.handler",
         "Runtime": "nodejs12.x",
@@ -589,7 +589,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/articles/readArticle.handler",
         "Runtime": "nodejs12.x",
@@ -627,7 +627,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/articles/getTotal.handler",
         "Runtime": "nodejs12.x",
@@ -665,7 +665,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/dt3-backend/dev/1620100741118-2021-05-04T03:59:01.118Z/dt3-backend.zip"
+          "S3Key": "serverless/dt3-backend/dev/1620101272026-2021-05-04T04:07:52.026Z/dt3-backend.zip"
         },
         "Handler": "src/handlers/comments/postComment.handler",
         "Runtime": "nodejs12.x",
@@ -696,124 +696,124 @@
         "PostCommentLogGroup"
       ]
     },
-    "ReadUserLambdaVersion2GZJJgzkfAB6ZVewRows9lFgryA8pR32OgikcQn0": {
+    "ReadUserLambdaVersion87I9xGpGOCWHjtcXQpJvqj8aF9EVFy8DemfjCh1eJo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadUserLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "LoginUserLambdaVersionJ2kjek8X0ioYw8IblU70nXnmNGkzPTu7cG208EnDRU": {
+    "LoginUserLambdaVersionSi0I38AB0weDISs0r4lqDEmmtZtq51m3d0LfoUnKg8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginUserLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "LoginByGoogleLambdaVersionhm06tWiuP19urEZvATsNrunvzPkyPssd6oidnpscw": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "LoginByGoogleLambdaFunction"
-        },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
-      }
-    },
-    "LoginByFacebookLambdaVersionih6XToQ9XW1TvsORzlkLsvs7MoeI7fdWDnlqYaZK7g": {
+    "LoginByFacebookLambdaVersion0mKhVXJ2WUbQDm86twmlehyXCXACgtYXjInQdhQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "LoginByFacebookLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "CreateCategoryLambdaVersionf7QSFqCuC44F60eYxNbuPqF7wkwHn6mZeXzxXrdP8": {
+    "LoginByGoogleLambdaVersionGhJCZ9xv74hXTWvq1gcJWmcSVAuCnS4k2wRgiN1B1c": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
-          "Ref": "CreateCategoryLambdaFunction"
+          "Ref": "LoginByGoogleLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "ListCategoriesLambdaVersionn5HUatKcyfEvgkg2VCF6S29738V58iw2tNtspAk2mbU": {
+    "ListCategoriesLambdaVersion9ngdpql3tXkErD5cVRe0c53KK6tZHutqiSn0EUvFOQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListCategoriesLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "AddArticleLambdaVersionuNcsCz3Br6dtZIc0iPOIZr9A6RwscZLhDNeHEuBNL0g": {
+    "AddArticleLambdaVersionMjSlox9fTADEDtPRBE06uPscRsbZ4pqbAVL1pmjC50": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AddArticleLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "ListArticlesLambdaVersionlps7QW0Q5cZwsl1mG7xRe38x6W5zZZpmYv9lySw9Y": {
+    "CreateCategoryLambdaVersionLgm9OZRYIv5iyL1MgwDTQNHJfTQ7ng8NT8zIT2YkY": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "CreateCategoryLambdaFunction"
+        },
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
+      }
+    },
+    "ListArticlesLambdaVersionNDN19lVyiWeYAuSmGRcnbDfdlqxx64bAzYOqvNLc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListArticlesLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "ReadArticleLambdaVersionI77X7m5uNWRB6clgubNqN7iblcJ5cWY1FT7wX5I": {
+    "ReadArticleLambdaVersionXIFlBUnGL1DvxWS8IdhzSpBA4QUGkYqY6IbiJ27Sk4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ReadArticleLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
-    "GetTotalLambdaVersion7m7jTodJNYAyZFYGYojp7rGPwMlFkBf9VbgvsMq52c": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "GetTotalLambdaFunction"
-        },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
-      }
-    },
-    "PostCommentLambdaVersiond07eDJwjyaNOQy3Bo0tinqUPkah6XFH0gfJDx1l6bU": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "PostCommentLambdaFunction"
-        },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
-      }
-    },
-    "CreateUserLambdaVersionrIChO7P5o011QNXTJnUqL7Fud7QgfGPwa5sejWHcd5k": {
+    "CreateUserLambdaVersionmmHayHVQeu1q0nnboWi2QGLNabsHuv9mgugn0xbYc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateUserLambdaFunction"
         },
-        "CodeSha256": "o2exXkGxe5NlfyDxpHRG9EgFkBc4rl4qSZdBmAC2Gpk="
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
+      }
+    },
+    "PostCommentLambdaVersionZfZjs2AwOR4N0f8RlZ61i4jOPnPekxXX6cc9T7eCGc": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "PostCommentLambdaFunction"
+        },
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
+      }
+    },
+    "GetTotalLambdaVersionsjIln3c8UO12d7aIFNQHMtem9DVKKfc5KeGkErc0g": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "GetTotalLambdaFunction"
+        },
+        "CodeSha256": "WrHfaiyuT40Lw4gLBGLw6f7O+5icQEtmBZ7HgJzkXCA="
       }
     },
     "AddArticleEventsRuleSchedule1": {
@@ -896,7 +896,7 @@
         }
       }
     },
-    "ApiGatewayResourceLoginbygoogle": {
+    "ApiGatewayResourceLoginDashbyDashgoogle": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
@@ -905,13 +905,13 @@
             "RootResourceId"
           ]
         },
-        "PathPart": "loginByGoogle",
+        "PathPart": "login-by-google",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
       }
     },
-    "ApiGatewayResourceLoginbyfacebook": {
+    "ApiGatewayResourceLoginDashbyDashfacebook": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
@@ -920,7 +920,7 @@
             "RootResourceId"
           ]
         },
-        "PathPart": "loginByFacebook",
+        "PathPart": "login-by-facebook",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -998,7 +998,7 @@
         }
       }
     },
-    "ApiGatewayResourceTotalarticles": {
+    "ApiGatewayResourceTotal": {
       "Type": "AWS::ApiGateway::Resource",
       "Properties": {
         "ParentId": {
@@ -1007,7 +1007,19 @@
             "RootResourceId"
           ]
         },
-        "PathPart": "totalArticles",
+        "PathPart": "total",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceTotalArticles": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Ref": "ApiGatewayResourceTotal"
+        },
+        "PathPart": "articles",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -1118,7 +1130,7 @@
         }
       }
     },
-    "ApiGatewayMethodLoginbygoogleOptions": {
+    "ApiGatewayMethodLoginDashbyDashgoogleOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "AuthorizationType": "NONE",
@@ -1156,14 +1168,14 @@
           ]
         },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceLoginbygoogle"
+          "Ref": "ApiGatewayResourceLoginDashbyDashgoogle"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
       }
     },
-    "ApiGatewayMethodLoginbyfacebookOptions": {
+    "ApiGatewayMethodLoginDashbyDashfacebookOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "AuthorizationType": "NONE",
@@ -1201,7 +1213,7 @@
           ]
         },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceLoginbyfacebook"
+          "Ref": "ApiGatewayResourceLoginDashbyDashfacebook"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1433,7 +1445,7 @@
         }
       }
     },
-    "ApiGatewayMethodTotalarticlesOptions": {
+    "ApiGatewayMethodTotalArticlesOptions": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "AuthorizationType": "NONE",
@@ -1471,7 +1483,7 @@
           ]
         },
         "ResourceId": {
-          "Ref": "ApiGatewayResourceTotalarticles"
+          "Ref": "ApiGatewayResourceTotalArticles"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1652,13 +1664,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodLoginbygooglePost": {
+    "ApiGatewayMethodLoginDashbyDashgooglePost": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "POST",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceLoginbygoogle"
+          "Ref": "ApiGatewayResourceLoginDashbyDashgoogle"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1695,13 +1707,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodLoginbyfacebookPost": {
+    "ApiGatewayMethodLoginDashbyDashfacebookPost": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "POST",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceLoginbyfacebook"
+          "Ref": "ApiGatewayResourceLoginDashbyDashfacebook"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -1953,13 +1965,13 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayMethodTotalarticlesGet": {
+    "ApiGatewayMethodTotalArticlesGet": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "GET",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourceTotalarticles"
+          "Ref": "ApiGatewayResourceTotalArticles"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -2039,7 +2051,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1620100719297": {
+    "ApiGatewayDeployment1620101252456": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -2050,26 +2062,26 @@
       "DependsOn": [
         "ApiGatewayMethodUserOptions",
         "ApiGatewayMethodLoginOptions",
-        "ApiGatewayMethodLoginbygoogleOptions",
-        "ApiGatewayMethodLoginbyfacebookOptions",
+        "ApiGatewayMethodLoginDashbyDashgoogleOptions",
+        "ApiGatewayMethodLoginDashbyDashfacebookOptions",
         "ApiGatewayMethodCategoryOptions",
         "ApiGatewayMethodCategoriesOptions",
         "ApiGatewayMethodArticleOptions",
         "ApiGatewayMethodArticlesOptions",
         "ApiGatewayMethodArticleIdVarOptions",
-        "ApiGatewayMethodTotalarticlesOptions",
+        "ApiGatewayMethodTotalArticlesOptions",
         "ApiGatewayMethodCommentOptions",
         "ApiGatewayMethodUserPost",
         "ApiGatewayMethodUserGet",
         "ApiGatewayMethodLoginPost",
-        "ApiGatewayMethodLoginbygooglePost",
-        "ApiGatewayMethodLoginbyfacebookPost",
+        "ApiGatewayMethodLoginDashbyDashgooglePost",
+        "ApiGatewayMethodLoginDashbyDashfacebookPost",
         "ApiGatewayMethodCategoryPost",
         "ApiGatewayMethodCategoriesGet",
         "ApiGatewayMethodArticlePost",
         "ApiGatewayMethodArticlesGet",
         "ApiGatewayMethodArticleIdVarGet",
-        "ApiGatewayMethodTotalarticlesGet",
+        "ApiGatewayMethodTotalArticlesGet",
         "ApiGatewayMethodCommentPost"
       ]
     },
@@ -2527,73 +2539,73 @@
     "ReadUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadUserLambdaVersion2GZJJgzkfAB6ZVewRows9lFgryA8pR32OgikcQn0"
+        "Ref": "ReadUserLambdaVersion87I9xGpGOCWHjtcXQpJvqj8aF9EVFy8DemfjCh1eJo"
       }
     },
     "LoginUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginUserLambdaVersionJ2kjek8X0ioYw8IblU70nXnmNGkzPTu7cG208EnDRU"
-      }
-    },
-    "LoginByGoogleLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "LoginByGoogleLambdaVersionhm06tWiuP19urEZvATsNrunvzPkyPssd6oidnpscw"
+        "Ref": "LoginUserLambdaVersionSi0I38AB0weDISs0r4lqDEmmtZtq51m3d0LfoUnKg8"
       }
     },
     "LoginByFacebookLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "LoginByFacebookLambdaVersionih6XToQ9XW1TvsORzlkLsvs7MoeI7fdWDnlqYaZK7g"
+        "Ref": "LoginByFacebookLambdaVersion0mKhVXJ2WUbQDm86twmlehyXCXACgtYXjInQdhQ"
       }
     },
-    "CreateCategoryLambdaFunctionQualifiedArn": {
+    "LoginByGoogleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateCategoryLambdaVersionf7QSFqCuC44F60eYxNbuPqF7wkwHn6mZeXzxXrdP8"
+        "Ref": "LoginByGoogleLambdaVersionGhJCZ9xv74hXTWvq1gcJWmcSVAuCnS4k2wRgiN1B1c"
       }
     },
     "ListCategoriesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListCategoriesLambdaVersionn5HUatKcyfEvgkg2VCF6S29738V58iw2tNtspAk2mbU"
+        "Ref": "ListCategoriesLambdaVersion9ngdpql3tXkErD5cVRe0c53KK6tZHutqiSn0EUvFOQ"
       }
     },
     "AddArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AddArticleLambdaVersionuNcsCz3Br6dtZIc0iPOIZr9A6RwscZLhDNeHEuBNL0g"
+        "Ref": "AddArticleLambdaVersionMjSlox9fTADEDtPRBE06uPscRsbZ4pqbAVL1pmjC50"
+      }
+    },
+    "CreateCategoryLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "CreateCategoryLambdaVersionLgm9OZRYIv5iyL1MgwDTQNHJfTQ7ng8NT8zIT2YkY"
       }
     },
     "ListArticlesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListArticlesLambdaVersionlps7QW0Q5cZwsl1mG7xRe38x6W5zZZpmYv9lySw9Y"
+        "Ref": "ListArticlesLambdaVersionNDN19lVyiWeYAuSmGRcnbDfdlqxx64bAzYOqvNLc"
       }
     },
     "ReadArticleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ReadArticleLambdaVersionI77X7m5uNWRB6clgubNqN7iblcJ5cWY1FT7wX5I"
-      }
-    },
-    "GetTotalLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "GetTotalLambdaVersion7m7jTodJNYAyZFYGYojp7rGPwMlFkBf9VbgvsMq52c"
-      }
-    },
-    "PostCommentLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "PostCommentLambdaVersiond07eDJwjyaNOQy3Bo0tinqUPkah6XFH0gfJDx1l6bU"
+        "Ref": "ReadArticleLambdaVersionXIFlBUnGL1DvxWS8IdhzSpBA4QUGkYqY6IbiJ27Sk4"
       }
     },
     "CreateUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateUserLambdaVersionrIChO7P5o011QNXTJnUqL7Fud7QgfGPwa5sejWHcd5k"
+        "Ref": "CreateUserLambdaVersionmmHayHVQeu1q0nnboWi2QGLNabsHuv9mgugn0xbYc"
+      }
+    },
+    "PostCommentLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "PostCommentLambdaVersionZfZjs2AwOR4N0f8RlZ61i4jOPnPekxXX6cc9T7eCGc"
+      }
+    },
+    "GetTotalLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "GetTotalLambdaVersionsjIln3c8UO12d7aIFNQHMtem9DVKKfc5KeGkErc0g"
       }
     },
     "ServiceEndpoint": {

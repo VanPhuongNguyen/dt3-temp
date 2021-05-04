@@ -28,5 +28,5 @@ getTotal:
   events:
     - http:
         method: GET
-        path: /totalArticles
+        path: /total/articles
         cors: true
