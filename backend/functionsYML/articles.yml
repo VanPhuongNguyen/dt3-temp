@@ -1,7 +1,7 @@
 addArticle:
   handler: src/handlers/articles/addArticle.handler
   events:
-    - schedule: rate(2 hours)
+    - schedule: rate(24 hours)
     - http:
         method: POST
         path: /article
@@ -21,4 +21,12 @@ readArticle:
     - http:
         method: GET
         path: /article/{id}
+        cors: true
+
+getTotal:
+  handler: src/handlers/articles/getTotal.handler
+  events:
+    - http:
+        method: GET
+        path: /total/articles
         cors: true

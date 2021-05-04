@@ -26,7 +26,7 @@ const readArticle: APIGatewayProxyHandler = async (event) => {
           {
             path: 'postBy',
             model: User,
-            select: 'firstName lastName avatar',
+            select: 'firstName lastName avatar -_id',
           },
           {
             path: 'comments',
@@ -34,14 +34,16 @@ const readArticle: APIGatewayProxyHandler = async (event) => {
             populate: {
               path: 'postBy',
               model: User,
-              select: 'firstName lastName avatar',
+              select: 'firstName lastName avatar -_id',
             },
           },
         ],
+        select: 'content postBy -_id',
       })
       .populate({
         path: 'category',
         model: Category,
+        select: 'name -_id',
       });
 
     if (!article) {
