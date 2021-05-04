@@ -275,7 +275,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/users/createUser.handler",
               "Runtime": "nodejs12.x",
@@ -313,7 +313,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/users/readUser.handler",
               "Runtime": "nodejs12.x",
@@ -351,7 +351,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/users/loginUser.handler",
               "Runtime": "nodejs12.x",
@@ -389,7 +389,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/users/loginByGoogle.handler",
               "Runtime": "nodejs12.x",
@@ -427,7 +427,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/users/loginByFacebook.handler",
               "Runtime": "nodejs12.x",
@@ -465,7 +465,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/categories/createCategory.handler",
               "Runtime": "nodejs12.x",
@@ -503,7 +503,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/categories/listCategories.handler",
               "Runtime": "nodejs12.x",
@@ -541,7 +541,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/articles/addArticle.handler",
               "Runtime": "nodejs12.x",
@@ -579,7 +579,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/articles/listArticles.handler",
               "Runtime": "nodejs12.x",
@@ -617,7 +617,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/articles/readArticle.handler",
               "Runtime": "nodejs12.x",
@@ -655,7 +655,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z/dt3-backend.zip"
+                "S3Key": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z/dt3-backend.zip"
               },
               "Handler": "src/handlers/comments/postComment.handler",
               "Runtime": "nodejs12.x",
@@ -686,114 +686,114 @@
               "PostCommentLogGroup"
             ]
           },
-          "CreateUserLambdaVersionPTeadie4xqD3qG6t1JZNfVbDms151gXiYlWa7OUk": {
+          "CreateUserLambdaVersionOZEp4VFQGZZyezXXtbHpGibcucWYgFglAKFseV740go": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateUserLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "LoginUserLambdaVersionyRv2Xxbnejr4MlVFDfgqdB2UN4f1Hj1CFg5fiXYgk": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "LoginUserLambdaFunction"
-              },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
-            }
-          },
-          "LoginByGoogleLambdaVersions9DljD3yeH9nwhk4HjKosIDOspUozfrqxKxdW2T94k4": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "LoginByGoogleLambdaFunction"
-              },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
-            }
-          },
-          "LoginByFacebookLambdaVersionExEq8E3O7syPCpyieqkauUWgxhRUJVumlMssGo": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "LoginByFacebookLambdaFunction"
-              },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
-            }
-          },
-          "ReadUserLambdaVersionHAvWR9wAsXGGTRyOjxeHg2gA7tIoa72jDh8QO8mYDQ": {
+          "ReadUserLambdaVersionLnCrtUUp5XHiEjpJOsIj0k1dwjdnaNBjHKPtBwB3fo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ReadUserLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "CreateCategoryLambdaVersionB1kuCZUKcVGUYpY0hSV8K4QvQbU888Vmf9pv5Ij9cTU": {
+          "LoginUserLambdaVersion3gOmYb1u88oylFh0mNwrrq15hlVvGAra16oWNCj4xg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
-                "Ref": "CreateCategoryLambdaFunction"
+                "Ref": "LoginUserLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "ListCategoriesLambdaVersionyYssksvokvVkPxz4iIZPT3SYbrjMolMPpbd4T21e7g": {
+          "LoginByGoogleLambdaVersionfIv1ixFzd3ZYXxeqOQHoclrvUIrKe1jjP0vr7xVOcc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
-                "Ref": "ListCategoriesLambdaFunction"
+                "Ref": "LoginByGoogleLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "AddArticleLambdaVersionhUUFb0Nh7LwVSfr5bhq1dOKYynrrt4ZderZhgBLpI": {
+          "LoginByFacebookLambdaVersionw5AyGIQmt58EB7VfEXPqGf4UoHSph3HMRVqyE3tE": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "LoginByFacebookLambdaFunction"
+              },
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
+            }
+          },
+          "AddArticleLambdaVersionBBs0BWsvZgntKhYOf6otwUHcMe52CUe3FwCsvxZOFE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AddArticleLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "ListArticlesLambdaVersionXHa3gqqxRm8VYQy2RnBpQuTtNVMYBP4om3VF5usZc": {
+          "CreateCategoryLambdaVersionXqMMmPBbg4xFsuFRv9KHmDxZnwUDYNUUrda8AHeMEoY": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "CreateCategoryLambdaFunction"
+              },
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
+            }
+          },
+          "ListCategoriesLambdaVersion0h6LpWdp0N3I301f0WdY6dbemHHeOn88A3cRpOvGy9o": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "ListCategoriesLambdaFunction"
+              },
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
+            }
+          },
+          "ListArticlesLambdaVersionVBYqmbG0vY768Q4fVhMQmpQUOMHNEg7LrjwqHPU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ListArticlesLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "ReadArticleLambdaVersionkLjs7WUD9conLklctJkPSDYGuLyiMNRoeAFHVi6ANLw": {
+          "ReadArticleLambdaVersionTibcoPUAU51HaWHqxYPv1eF1BqCH0FqPYeCQZSftQtY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ReadArticleLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
-          "PostCommentLambdaVersionjX8GX15MRtR1aZKFe5o81R0H2Kl6k2mVhUeO60q7KSw": {
+          "PostCommentLambdaVersionlfA6YwtnFFwzCUL1UkzxyaegLrCaZIDc3MRj8oVHYA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PostCommentLambdaFunction"
               },
-              "CodeSha256": "Imz0S18kTMGWZtutyt6gcrGfI115A/cbo3lrFcWFe08="
+              "CodeSha256": "/XEKf2ka+2/R1oq5VnGi53tULxp2ePmZwbngtTJAS3U="
             }
           },
           "AddArticleEventsRuleSchedule1": {
@@ -1916,7 +1916,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1620035558324": {
+          "ApiGatewayDeployment1620036807770": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -2365,67 +2365,67 @@
           "CreateUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateUserLambdaVersionPTeadie4xqD3qG6t1JZNfVbDms151gXiYlWa7OUk"
-            }
-          },
-          "LoginUserLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "LoginUserLambdaVersionyRv2Xxbnejr4MlVFDfgqdB2UN4f1Hj1CFg5fiXYgk"
-            }
-          },
-          "LoginByGoogleLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "LoginByGoogleLambdaVersions9DljD3yeH9nwhk4HjKosIDOspUozfrqxKxdW2T94k4"
-            }
-          },
-          "LoginByFacebookLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "LoginByFacebookLambdaVersionExEq8E3O7syPCpyieqkauUWgxhRUJVumlMssGo"
+              "Ref": "CreateUserLambdaVersionOZEp4VFQGZZyezXXtbHpGibcucWYgFglAKFseV740go"
             }
           },
           "ReadUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ReadUserLambdaVersionHAvWR9wAsXGGTRyOjxeHg2gA7tIoa72jDh8QO8mYDQ"
+              "Ref": "ReadUserLambdaVersionLnCrtUUp5XHiEjpJOsIj0k1dwjdnaNBjHKPtBwB3fo"
             }
           },
-          "CreateCategoryLambdaFunctionQualifiedArn": {
+          "LoginUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateCategoryLambdaVersionB1kuCZUKcVGUYpY0hSV8K4QvQbU888Vmf9pv5Ij9cTU"
+              "Ref": "LoginUserLambdaVersion3gOmYb1u88oylFh0mNwrrq15hlVvGAra16oWNCj4xg"
             }
           },
-          "ListCategoriesLambdaFunctionQualifiedArn": {
+          "LoginByGoogleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ListCategoriesLambdaVersionyYssksvokvVkPxz4iIZPT3SYbrjMolMPpbd4T21e7g"
+              "Ref": "LoginByGoogleLambdaVersionfIv1ixFzd3ZYXxeqOQHoclrvUIrKe1jjP0vr7xVOcc"
+            }
+          },
+          "LoginByFacebookLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "LoginByFacebookLambdaVersionw5AyGIQmt58EB7VfEXPqGf4UoHSph3HMRVqyE3tE"
             }
           },
           "AddArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AddArticleLambdaVersionhUUFb0Nh7LwVSfr5bhq1dOKYynrrt4ZderZhgBLpI"
+              "Ref": "AddArticleLambdaVersionBBs0BWsvZgntKhYOf6otwUHcMe52CUe3FwCsvxZOFE"
+            }
+          },
+          "CreateCategoryLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "CreateCategoryLambdaVersionXqMMmPBbg4xFsuFRv9KHmDxZnwUDYNUUrda8AHeMEoY"
+            }
+          },
+          "ListCategoriesLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "ListCategoriesLambdaVersion0h6LpWdp0N3I301f0WdY6dbemHHeOn88A3cRpOvGy9o"
             }
           },
           "ListArticlesLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ListArticlesLambdaVersionXHa3gqqxRm8VYQy2RnBpQuTtNVMYBP4om3VF5usZc"
+              "Ref": "ListArticlesLambdaVersionVBYqmbG0vY768Q4fVhMQmpQUOMHNEg7LrjwqHPU"
             }
           },
           "ReadArticleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ReadArticleLambdaVersionkLjs7WUD9conLklctJkPSDYGuLyiMNRoeAFHVi6ANLw"
+              "Ref": "ReadArticleLambdaVersionTibcoPUAU51HaWHqxYPv1eF1BqCH0FqPYeCQZSftQtY"
             }
           },
           "PostCommentLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PostCommentLambdaVersionjX8GX15MRtR1aZKFe5o81R0H2Kl6k2mVhUeO60q7KSw"
+              "Ref": "PostCommentLambdaVersionlfA6YwtnFFwzCUL1UkzxyaegLrCaZIDc3MRj8oVHYA"
             }
           },
           "ServiceEndpoint": {
@@ -2601,7 +2601,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateUserLambdaVersionPTeadie4xqD3qG6t1JZNfVbDms151gXiYlWa7OUk"
+        "versionLogicalId": "CreateUserLambdaVersionOZEp4VFQGZZyezXXtbHpGibcucWYgFglAKFseV740go"
       },
       "readUser": {
         "handler": "src/handlers/users/readUser.handler",
@@ -2641,7 +2641,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ReadUserLambdaVersionHAvWR9wAsXGGTRyOjxeHg2gA7tIoa72jDh8QO8mYDQ"
+        "versionLogicalId": "ReadUserLambdaVersionLnCrtUUp5XHiEjpJOsIj0k1dwjdnaNBjHKPtBwB3fo"
       },
       "loginUser": {
         "handler": "src/handlers/users/loginUser.handler",
@@ -2681,7 +2681,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "LoginUserLambdaVersionyRv2Xxbnejr4MlVFDfgqdB2UN4f1Hj1CFg5fiXYgk"
+        "versionLogicalId": "LoginUserLambdaVersion3gOmYb1u88oylFh0mNwrrq15hlVvGAra16oWNCj4xg"
       },
       "loginByGoogle": {
         "handler": "src/handlers/users/loginByGoogle.handler",
@@ -2721,7 +2721,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "LoginByGoogleLambdaVersions9DljD3yeH9nwhk4HjKosIDOspUozfrqxKxdW2T94k4"
+        "versionLogicalId": "LoginByGoogleLambdaVersionfIv1ixFzd3ZYXxeqOQHoclrvUIrKe1jjP0vr7xVOcc"
       },
       "loginByFacebook": {
         "handler": "src/handlers/users/loginByFacebook.handler",
@@ -2761,7 +2761,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "LoginByFacebookLambdaVersionExEq8E3O7syPCpyieqkauUWgxhRUJVumlMssGo"
+        "versionLogicalId": "LoginByFacebookLambdaVersionw5AyGIQmt58EB7VfEXPqGf4UoHSph3HMRVqyE3tE"
       },
       "createCategory": {
         "handler": "src/handlers/categories/createCategory.handler",
@@ -2801,7 +2801,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateCategoryLambdaVersionB1kuCZUKcVGUYpY0hSV8K4QvQbU888Vmf9pv5Ij9cTU"
+        "versionLogicalId": "CreateCategoryLambdaVersionXqMMmPBbg4xFsuFRv9KHmDxZnwUDYNUUrda8AHeMEoY"
       },
       "listCategories": {
         "handler": "src/handlers/categories/listCategories.handler",
@@ -2841,7 +2841,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ListCategoriesLambdaVersionyYssksvokvVkPxz4iIZPT3SYbrjMolMPpbd4T21e7g"
+        "versionLogicalId": "ListCategoriesLambdaVersion0h6LpWdp0N3I301f0WdY6dbemHHeOn88A3cRpOvGy9o"
       },
       "addArticle": {
         "handler": "src/handlers/articles/addArticle.handler",
@@ -2884,7 +2884,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AddArticleLambdaVersionhUUFb0Nh7LwVSfr5bhq1dOKYynrrt4ZderZhgBLpI"
+        "versionLogicalId": "AddArticleLambdaVersionBBs0BWsvZgntKhYOf6otwUHcMe52CUe3FwCsvxZOFE"
       },
       "listArticles": {
         "handler": "src/handlers/articles/listArticles.handler",
@@ -2924,7 +2924,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ListArticlesLambdaVersionXHa3gqqxRm8VYQy2RnBpQuTtNVMYBP4om3VF5usZc"
+        "versionLogicalId": "ListArticlesLambdaVersionVBYqmbG0vY768Q4fVhMQmpQUOMHNEg7LrjwqHPU"
       },
       "readArticle": {
         "handler": "src/handlers/articles/readArticle.handler",
@@ -2964,7 +2964,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ReadArticleLambdaVersionkLjs7WUD9conLklctJkPSDYGuLyiMNRoeAFHVi6ANLw"
+        "versionLogicalId": "ReadArticleLambdaVersionTibcoPUAU51HaWHqxYPv1eF1BqCH0FqPYeCQZSftQtY"
       },
       "postComment": {
         "handler": "src/handlers/comments/postComment.handler",
@@ -3004,7 +3004,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "PostCommentLambdaVersionjX8GX15MRtR1aZKFe5o81R0H2Kl6k2mVhUeO60q7KSw"
+        "versionLogicalId": "PostCommentLambdaVersionlfA6YwtnFFwzCUL1UkzxyaegLrCaZIDc3MRj8oVHYA"
       }
     },
     "configValidationMode": "warn",
@@ -3030,7 +3030,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/dt3-backend/dev/1620035586301-2021-05-03T09:53:06.301Z",
+    "artifactDirectoryName": "serverless/dt3-backend/dev/1620036850812-2021-05-03T10:14:10.812Z",
     "artifact": ""
   }
 }
